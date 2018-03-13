@@ -10,7 +10,7 @@ const config = {
 
     module: {
         rules: [
-            { test: /\.ts?$/, loader: "awesome-typescript-loader", exclude: [/node_modules/, /test/] },
+            { test: /\.ts?$/, loader: "ts-loader", exclude: [/node_modules/, /test/] },
             { test: /\.js?$/, loader: "babel-loader", exclude: [/node_modules/, /test/] }
         ]
     },
@@ -23,7 +23,13 @@ const config = {
         new ProgressBarPlugin()
     ],
 
-    mode: process.env.MODE || 'development'
+    mode: process.env.MODE || 'development',
+
+    devServer: {
+        contentBase: path.resolve(__dirname, "public"),
+        compress: true,
+        port: 1234
+    }
 };
 
 
