@@ -1,7 +1,7 @@
 {
   "name": "ts-webpack-barebones",
   "version": "1.0.0",
-  "description": "",
+  "description": "A barebones starter for a TypeScript front-end project using Webpack to bundle the application.",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/http-server/bin/http-server -p 1234",
@@ -11,9 +11,8 @@
     "watch:dev": "./node_modules/webpack-cli/bin/webpack.js --watch",
     "test": "./node_modules/mocha/bin/mocha --harmony --compilers ts:ts-node/register"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Robert Fairley <robert.fairley@rci.rogers.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@types/jsdom": "^11.0.4",
