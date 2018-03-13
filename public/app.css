@@ -1,0 +1,36 @@
+:root {
+    font-family: "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
+    font-weight: 200;
+}
+
+.counter {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+
+    padding: 1em;
+}
+
+.count {
+    font-size: 64pt;
+}
+
+button {
+    background-color: #ede;
+    border: 0;
+
+    font-size: 16pt;
+
+    margin: 2px;
+    padding: 15px 34px;
+
+    transition: 200ms all ease;
+}
+
+button:hover {
+    background-color: #fef;
+}
+
+button:active {
+    background-color: #ece;
+}
