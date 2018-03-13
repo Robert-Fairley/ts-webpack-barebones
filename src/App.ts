@@ -35,7 +35,7 @@ function Home() : void
      * @param e<Event> - Native event object.
      * @desc Accesses the local state. Increases it by 1 and updates the UI accordingly.
      */
-    this.increaseCount = e => {
+    this.increaseCount = (e: Event) : void => {
         this.state.count = this.state.count + 1;     // Set the state to the current state + 1
         console.log('Increased ', this.state.count); // Log the change
         count.innerText = this.state.count;          // Update the UI element with the new count
@@ -46,7 +46,7 @@ function Home() : void
      * @param e<Event> - Native event object.
      * @desc Accesses the local state. Decreases it by 1 and updates the UI accordingly.
      */
-    this.decreaseCount = e => {
+    this.decreaseCount = (e: Event) : void => {
         this.state.count = this.state.count - 1;
         console.log('Decreased ', this.state.count);
         count.innerText = this.state.count;
@@ -59,7 +59,7 @@ function Home() : void
      * generated elements from within this function. This is used to append the
      * element to the HTML file calling for the application.
      */
-    this.render = e => {
+    this.render = (e: Event) : HTMLElement => {
         console.log('Rendered Home Component');
         return counter;
     }
